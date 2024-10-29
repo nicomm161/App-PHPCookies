@@ -1,0 +1,205 @@
+*{    
+    /* Centrar tots els elements */
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; /*Retornem la llista sense els punts*/
+}
+
+/* General per a tot el que contingui body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;  /* Color del fons en body*/
+    margin: 0; /* Espai fora del element*/
+    padding: 0; /* Espai dins del element*/
+    color: black; /* Color del text */
+    text-transform: uppercase; /* Funcio que transforma tot el text en majuscules */
+    font-size: 14px;
+    
+    /* Centrar tots els elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del viewport */
+    flex-direction: column; /* Posicionar els elements en columna */
+}
+
+/* Afecta a totes les pàgines que posen la hora i usuari actual */
+#cabecera {
+    background-color: blue; /* Color de fons blau */
+    color: white; /* Color del text blanc */
+    padding: 15px; /* Espai dins del element*/
+    border-radius: 8px; /* Vora arrodonida */
+    text-align: center; /* Centrar el text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre de la capçalera */
+}
+
+/* Titols */
+h1, h2 {
+    color: blue; /* Color dels titols */
+    text-align: center; /* Centrar els titols */
+    font-size: 20px;
+}
+
+/* Formularis */
+form {
+    background-color: white; /* Fons blanc per als formularis */
+    padding: 20px;
+    border-radius: 8px; /* Vora arrodonida */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+    max-width: 400px; /* Ample màximo del formulari */
+    width: 100%; /* Per assegurar que agafa tota l'amplada disponible */
+    font-size: 14px;
+}
+
+/* Etiquetes */
+label {
+    display: block; /* Fer que les etiquetes ocupen tota la linea */
+    margin-bottom: 5px; /* Espai entre etiqueta i camp */
+    font-weight: bold; /* Negreta per a etiquetes */
+}
+
+/* Camps d'entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* Camps d'amplada complert */
+    padding: 10px; /* Espai intern */
+    margin-bottom: 15px; /* Espaci entre camps */
+    border: 1px solid grey; /* Vora gris */
+    border-radius: 4px; /* Vora arrodonida */
+    
+}
+
+/* Botó */
+input[type="submit"] {
+    background-color: green; /* Color de fons verd */
+    color: white; /* Color del text blanc */
+    padding: 10px 15px; /* Espai intern */
+    border: none; /* Sense vora */
+    cursor: pointer; /* Canviar el cursor al pasar el ratolí */
+    font-size: 16px; /* Tamany de font */
+}
+
+input[type="submit"]:hover {
+    background-color: green; /* Color de fons verd al pasar el ratolí */
+}
+
+/* Enllaços */
+a {
+    color: blue; /* Color blau per els enllaços */
+    text-decoration: none; /* Sense subrayat */
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayat al pasar el ratolí */
+}
+
+/* Etiqueta p per posar mes informacio a la web */
+p{
+    text-align: center; /*Posar el text en el mig de la pàgina */
+    font-weight: bold; /*Posar en negreta la lletra*/
+}
+
+/* Estils generals de la taula */
+table {
+    /* Ocupa el 100% de l'amplada del contenidor */
+    width: 100%;
+    /* Fusiona los bordes de las celdas para eliminar el doble borde */
+    border-collapse: collapse;
+    /* Añade un margen superior e inferior de 20px */
+    margin: 20px 0;
+    /* Define la fuente de la tabla */
+    font-family: 'Arial', sans-serif;
+    /* Fondo gris claro para la tabla */
+    background-color: #f9f9f9;
+    /* Aplica una sombra alrededor de la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estils per a l'encapçalent de la taula */
+thead {
+    /* Color de fons blau per a la capçalera */
+    background-color: blue;
+    /* Text blanc en la capçalera */
+    color: white;
+    /* Alinea el text al centre */
+    text-align: center;
+}
+
+/* Estil de les cel.les del encapçalent */
+thead th {
+    /* Farcit de les cel.les del encapçalent */
+    padding: 12px;
+    /* Tamany de font per als encapçalents */
+    font-size: 16px;
+}
+
+/* Estil per a les filas del cos de la taula */
+tbody tr {
+    /* Afegeix una linea divisoria a sota de cada fila */
+    border-bottom: 1px solid gray;
+}
+
+/* Canvi de color de fons quan es pasa el cursor per sobre de una fila */
+tbody tr:hover {
+    background-color: white;
+}
+
+/* Estil per a les cel.les del cos de la tabla */
+td {
+    /* Farcit intern de les cel.les */
+    padding: 10px;
+    /* Centra el contingut horitzontalment */
+    text-align: center;
+    /* Alinea el contingut verticalment al centre */
+    vertical-align: middle;
+}
+
+/* Estils per a les imatges dins de les celdes */
+td img {
+    /* Esquines arrodonides per les imatges */
+    border-radius: 8px;
+    /* Transició suau al fer hover */
+    transition: transform 0.3s ease;
+}
+
+/* Efecte d'agrandament al fer hover sobre les imatges */
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* Estils per a les cel.les de text en les columnes 2 y 3 */
+td:nth-child(2), td:nth-child(3) {
+    /* Tamaño de fuente más pequeño */
+    font-size: 14px;
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Color del text negre */
+    color: black;
+}
+
+/* Estils per a els botons */
+button {
+    /* Afegeix un margen superior */
+    margin-top: 10px;
+    /* Farcit intern del botó */
+    padding: 10px 20px;
+    /* Color de fons verd */
+    background-color: green;
+    /* Text blanc */
+    color: white;
+    /* Elimina la vora */
+    border: none;
+    /* Canvia el cursor a una mà al passar sobre el botó */
+    cursor: pointer;
+    /* Tamany de font del botó */
+    font-size: 16px;
+    /* Vora arrodonida */
+    border-radius: 8px;
+}
+
+
+
+
+
